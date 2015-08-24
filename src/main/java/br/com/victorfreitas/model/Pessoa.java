@@ -1,10 +1,21 @@
 package br.com.victorfreitas.model;
 
+import java.io.Serializable;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "pessoa")
-public class Pessoa {
+public class Pessoa implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public Pessoa(){
+	
+	}
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
