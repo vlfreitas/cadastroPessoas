@@ -14,7 +14,7 @@ import br.com.victorfreitas.service.PessoaService;
 @RequestMapping("/pessoa")
 public class PessoaController {
 
-	public static final String VIEW = "product";
+	public static final String VIEW = "index";
 	
 	@Autowired
 	private PessoaService service;
